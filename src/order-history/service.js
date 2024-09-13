@@ -4,13 +4,12 @@
 import { getAuthenticatedHttpClient, getAuthenticatedUser } from '@edx/frontend-platform/auth';
 import { getConfig } from '@edx/frontend-platform';
 
-const { ECOMMERCE_BASE_URL } = getConfig();
-
-const ECOMMERCE_API_BASE_URL = `${ECOMMERCE_BASE_URL}/api/v2`;
-const ECOMMERCE_RECEIPT_BASE_URL = `${ECOMMERCE_BASE_URL}/checkout/receipt/`;
 
 // eslint-disable-next-line import/prefer-default-export
 export async function getOrders(page = 1, pageSize = 20) {
+  const { ECOMMERCE_BASE_URL } = getConfig();
+  const ECOMMERCE_API_BASE_URL = `${ECOMMERCE_BASE_URL}/api/v2`;
+  const ECOMMERCE_RECEIPT_BASE_URL = `${ECOMMERCE_BASE_URL}/checkout/receipt/`;
   const httpClient = getAuthenticatedHttpClient();
   const { username } = getAuthenticatedUser();
   const { COMMERCE_COORDINATOR_BASE_URL } = getConfig();
