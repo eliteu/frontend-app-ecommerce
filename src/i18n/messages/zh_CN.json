@@ -5,7 +5,7 @@
   "error.notfound.message": "The page you're looking for is unavailable or there's an error in the URL. Please check the URL and try again.",
   "ecommerce.order.history.support.fragment": "contact support",
   "ecommerce.order.history.page.heading": "订单记录",
-  "ecommerce.order.history.no.orders": "Orders you place with {siteName} will appear here.",
+  "ecommerce.order.history.no.orders": "您在 {siteName} 下达的订单，将会出现在这里。",
   "ecommerce.order.history.loading.orders": "Loading orders...",
   "ecommerce.order.history.view.order.detail": "查看订单详情",
   "ecommerce.order.history.table.column.items": "项目",
